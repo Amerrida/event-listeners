@@ -15,7 +15,6 @@ for (let i = 0; i < deleteButtons.length; i++){
         cardTodoDelete.remove();
         //.remove()
         //.parentNode
-        
         console.log ("they clicked delete!!");
     })
 }
@@ -26,7 +25,7 @@ const printToDom =(stringToPrint, whereToPrint) => {
 }
 
 const buildNewToDoCard = (toDo, notes) => {
-    let DOMString =`<div class="card" style="width: 18rem;">
+    let DOMString =`<div class="card w-25 m-5">
     <div class="card-body">
       <h5 class="card-title">${toDo}</h5>
       <p class="card-text">${notes}.</p>
@@ -39,7 +38,6 @@ const buildNewToDoCard = (toDo, notes) => {
     activateDeletes()
     
 }
-
 //now add the event listener itself//
 
 submitToDoInputButton.addEventListener("click", (e) => {
